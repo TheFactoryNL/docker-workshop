@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  mongodb:
+    image: "mongo:latest"
+    ports: 
+      - "27017:27017"
+  api:
+    build: .
+    ports: 
+      - "8000:8000"
+    environment:
+      - DB_CLIENT=mongodb
+    depends_on:
+      - mongodb
