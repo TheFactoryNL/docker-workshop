@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  api:
+    image: npmapi
+    ports: 
+      - "3001:3001"
+  ui:
+    image: npmui
+    ports:
+      - "3000:3000"
