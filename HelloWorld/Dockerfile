@@ -1,4 +1,5 @@
 FROM amazoncorretto:19
-COPY HelloWorld.class /tmp
+COPY . /tmp
 WORKDIR /tmp
+RUN javac HelloWorld.java
 ENTRYPOINT [ "java", "HelloWorld" ]
