@@ -12,3 +12,6 @@ services:
       - DB_CLIENT=mongodb
     depends_on:
       - mongodb
+
+
+# http://localhost:8000/docs
